@@ -1,10 +1,12 @@
 import discord
+import os
 import random
+from dotenv import load_dotenv
 from discord.ext import commands
 from discord.ui import View
 from helpers import get_quote, get_time, is3, worldle_layout, update_em, check
 
-from config import *
+# from config import *
 
 # Create an instant of Bot to connect to Discord
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
@@ -265,5 +267,5 @@ async def word(ctx):
         await ctx.send(f"Nice try, the word is {ans}")
         return
 
-
-bot.run(TOKEN)
+load_dotenv()
+bot.run(os.getenv('TOKEN'))
