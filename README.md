@@ -21,6 +21,7 @@ The whole project consists of:
 The Discord bot TOKEN is stored in a .env file for the reason of privacy and security.
 
 This following part will a brief introduction to the capability of my Discord bot with the prefix to commands is **!**
+
 `!helper`: Display a Discord embed that introduces users to the usage of the bot
 
 `!quote`: Upon calling, it will display to the user a random quote which is requested from API. The cooldown of this command is 24 hours. Users will get notice how long they have to wait if they keep calling this command.
