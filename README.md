@@ -22,8 +22,11 @@ The Discord bot TOKEN is stored in a .env file for the reason of privacy and sec
 
 This following part will a brief introduction to the capability of my Discord bot with the prefix to commands is **!**
 `!helper`: Display a Discord embed that introduces users to the usage of the bot
+
 `!quote`: Upon calling, it will display to the user a random quote which is requested from API. The cooldown of this command is 24 hours. Users will get notice how long they have to wait if they keep calling this command.
+
 `!rps`: Display 3 options of rock, paper, scissors and play a game of rps with user to see who reached 3 points first.
+
 `!word`: Let user play a game of Wordle, a random word from **words.txt** will be chosen and the user has 6 times to guess the correct words. The correct letters at the correct position will give a _green_ hint, the correct word at the wrong position will give a _yellow_ hint and the wrong word will yield a _red_ hint. The command will reject invalid guess, for instant, not 5-character input from the user.
 
 Besides, the bot has some other interaction when the user mentions the bot or has a certain word or character in their message.
