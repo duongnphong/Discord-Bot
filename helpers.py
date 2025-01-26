@@ -1,21 +1,22 @@
-import requests
-import json
 import datetime
-import pytz
+import json
+
 import discord
+import pytz
+import requests
 
 
 def get_quote():
     api = requests.get("https://zenquotes.io/api/random")
     quote = json.loads(api.text)
-    quote = quote[0]['q']
-    return (quote)
+    quote = quote[0]["q"]
+    return quote
 
 
 def get_time():
     zone = pytz.timezone("Asia/Bangkok")
     now = datetime.datetime.now(zone)
-    return (now.strftime("%d-%m-%y %H:%M:%S"))
+    return now.strftime("%d-%m-%y %H:%M:%S")
 
 
 def is3(x, y):
